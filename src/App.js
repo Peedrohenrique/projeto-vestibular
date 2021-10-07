@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class App extends Component{
 
     constructor(prosp){
@@ -7,15 +8,13 @@ class App extends Component{
         this.state = {
            
         }
-
-       
     }
-
-    
 
     render(){
         return(
-            <div></div>
+            <div>
+                
+            </div>
         )
     }
 }
