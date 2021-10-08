@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Formulario from './Componets/Formulario/Formulario.jsx'
+import Button from './Componets/Button/Button'
 
 
 class App extends Component{
@@ -15,6 +16,7 @@ class App extends Component{
         return(
             <div>
                 <Formulario />
+                <Button />
             </div>
         )
     }

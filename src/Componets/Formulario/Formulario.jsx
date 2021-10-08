@@ -1,102 +1,133 @@
-import React, { Component } from 'react';
-import './Formulario.css'
+import React, { Component } from "react";
+import "./Formulario.css";
 
-class Formulario extends Component{
-    render(){
-        return(
-            // Início do Título do Formulário
-            
-            <div className=" container col-md-6 order-md-1">
-          <h1 className="mb-3 display-4 my-5">inscrição vestibular - UNIP</h1>
+class Formulario extends Component {
+  render() {
+    return (
+      /* Título */
+      <div className="container">
+        <div className=" container col-md-6 order-md-1">
+          <h1 className="mb-3 display-4 my-5">inscrição Vestibular</h1>
 
+        {/*   Input de NOME COMPLETO  */}
           <form className="needs-validation my-5" novalidate>
             <div className="row">
-              <div className="col-md-6 mb-3">
+              <div className="col-md-8 mb-3">
                 <label for="primeiroNome">Nome Completo</label>
-                <input type="text" className="form-control" id="primeiroNome" placeholder="" required />
+                <input
+                  type="text"
+                  className="form-control"
+                  id="primeiroNome"
+                  placeholder=""
+                  required
+                />
                 <div className="invalid-feedback">
                   É obrigatório inserir um nome válido.
                 </div>
               </div>
-              <div className="col-md-3 mb-6">
+
+              {/*   Input do CPF  */}
+              <div className="col-md-4 mb-6">
                 <label for="sobrenome">CPF</label>
-                <input type="text" className="form-control" id="sobrenome" placeholder="" required />
+                <input
+                  type="text"
+                  className="form-control"
+                  id="sobrenome"
+                  placeholder=""
+                  required
+                />
                 <div className="invalid-feedback">
                   É obrigatório inserir um sobre nome válido.
                 </div>
               </div>
-            </div>
 
-            <div className="col-md-9 mb-3">
-              <label for="nickname">Nickname</label>
-              <div className="input-group">
-                <input type="text" className="form-control" id="nickname" placeholder="Nickname" required />
-                <div className="invalid-feedback">
-                  Seu nickname é obrigatório.
-                </div>
-              </div>
+              {/*   Input do E-MAIL  */}
             </div>
-
-            <div className="mb-3">
-              <label for="email">Email <span className="text-muted">(Opcional)</span></label>
-              <input type="email" className="form-control" id="email" placeholder="fulano@exemplo.com" />
-              <div className="invalid-feedback">
-                Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
-              </div>
-            </div>
-
-            <div className="mb-3">
-              <label for="endereco">Endereço</label>
-              <input type="text" className="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required />
-              <div className="invalid-feedback">
-                Por favor, insira seu endereço de entrega.
-              </div>
-            </div>
-
-            <div className="mb-3">
-              <label for="endereco2">Endereço 2 <span className="text-muted">(Opcional)</span></label>
-              <input type="text" className="form-control" id="endereco2" placeholder="Apartamento ou casa" />
-            </div>
-
             <div className="row">
-              <div className="col-md-5 mb-3">
-                <label for="pais">País</label>
-                <select className="custom-select d-block w-100 form-control" id="pais" required>
-                  <option value="">Escolha...</option>
-                  <option>Brasil</option>
-                </select>
+              <div className="col-md-8 mb-4">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  placeholder="fulano@exemplo.com"
+                />
                 <div className="invalid-feedback">
-                  Por favor, escolha um país válido.
-                </div>
-              </div>
-              <div className="col-md-4 mb-3">
-                <label for="estado">Estado</label>
-                <select className="custom-select d-block w-100 form-control" id="estado" required>
-                  <option value="">Escolha...</option>
-                  <option>Acre</option>
-                </select>
-                <div className="invalid-feedback">
-                  Por favor, insira um estado válido.
-                </div>
-              </div>
-              <div className="col-md-3 mb-3">
-                <label for="cep">CEP</label>
-                <input type="text" className="form-control" id="cep" placeholder="" required />
-                <div className="invalid-feedback">
-                  É obrigatório inserir um CEP.
+                  Por favor, insira um endereço de e-mail válido, para
+                  atualizações de entrega.
                 </div>
               </div>
 
-              <div className="col-md-6 mb-3">
-                <button type="button" class="btn btn-primary form-control" required>inscrição</button>
+                {/*   Input dO CELULAR  */}
+              <div className="col-md-4 mb-4">
+                <label for="cep">Celular</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="celular"
+                  placeholder=""
+                  required
+                />
+                <div className="invalid-feedback">
+                  É obrigatório inserir um Celular.
+                </div>
               </div>
             </div>
-            </form>
+
+              {/*   Input do CURSO  */}
+            <div className="row">
+              <div className="col-md-5 mb-4">
+                <label for="pais">Curso</label>
+                <select
+                  className="custom-select d-block w-100 form-control"
+                  id="curso"
+                  required
+                >
+                  <option value="">Escolha...</option>
+                  <option>...</option>
+                </select>
+                <div className="invalid-feedback">
+                  Por favor, escolha um Curso válido.
+                </div>
+              </div>
+
+              {/*   Input da UNIDADE  */}
+              <div className="col-md-4 mb-4">
+                <label for="estado">Unidade</label>
+                <select
+                  className="custom-select d-block w-100 form-control"
+                  id="estado"
+                  required
+                >
+                  <option value="">Escolha...</option>
+                  <option>...</option>
+                </select>
+                <div className="invalid-feedback">
+                  Por favor, insira uma Unidade válido.
+                </div>
+              </div>
+
+                {/*   Input do VESTIBULAR  */}
+              <div className="col-md-3 mb-4">
+                <label for="estado">Vestibular</label>
+                <select
+                  className="custom-select d-block w-100 form-control"
+                  id="estado"
+                  required
+                >
+                  <option value="">Escolha...</option>
+                  <option>...</option>
+                </select>
+                <div className="invalid-feedback">
+                  Por favor, insira um Vestibular válido.
+                </div>
+              </div>
             </div>
-            
-              
-        )
-    }
+          </form>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Formulario;
