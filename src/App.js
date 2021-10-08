@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from './Componets/Form/Form'
 
 
 class App extends Component{
@@ -13,7 +14,7 @@ class App extends Component{
     render(){
         return(
             <div>
-                
+                <Form />
             </div>
         )
     }
