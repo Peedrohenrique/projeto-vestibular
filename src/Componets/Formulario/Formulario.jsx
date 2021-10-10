@@ -5,11 +5,10 @@ class Formulario extends Component {
   render() {
     return (
       /* Título */
-      <div className="container">
         <div className=" container col-md-6 order-md-1">
           <h1 className="mb-3 display-4 my-5">inscrição Vestibular</h1>
 
-        {/*   Input de NOME COMPLETO  */}
+          {/*   Input de NOME COMPLETO  */}
           <form className="needs-validation my-5" novalidate>
             <div className="row">
               <div className="col-md-8 mb-3">
@@ -58,7 +57,7 @@ class Formulario extends Component {
                 </div>
               </div>
 
-                {/*   Input dO CELULAR  */}
+              {/*   Input dO CELULAR  */}
               <div className="col-md-4 mb-4">
                 <label for="cep">Celular</label>
                 <input
@@ -74,7 +73,7 @@ class Formulario extends Component {
               </div>
             </div>
 
-              {/*   Input do CURSO  */}
+            {/*   Input do CURSO  */}
             <div className="row">
               <div className="col-md-5 mb-4">
                 <label for="pais">Curso</label>
@@ -107,7 +106,7 @@ class Formulario extends Component {
                 </div>
               </div>
 
-                {/*   Input do VESTIBULAR  */}
+              {/*    Input do VESTIBULAR   */}
               <div className="col-md-3 mb-4">
                 <label for="estado">Vestibular</label>
                 <select
@@ -122,10 +121,18 @@ class Formulario extends Component {
                   Por favor, insira um Vestibular válido.
                 </div>
               </div>
+
+              {/*        BOTÃO   */}
+              <div class="form-row text-center">
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">
+                  Inscrição
+                  </button>
+                </div>
+              </div>
             </div>
           </form>
         </div>
-      </div>
     );
   }
 }
